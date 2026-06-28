@@ -1,0 +1,17 @@
+{
+  "name": "MonitorOS_Portable",
+  "short_name": "MonitorOS",
+  "description": "Aplicación de diagnóstico ejecutable desde almacenamiento externo",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#1a73e8",
+  "orientation": "any",
+  "launch_path": "/index.html",
+  "type": "privileged",
+  "permissions": {
+    "systemXHR": { 
+      "description": "Requerido para conectores de servicios" 
+    }
+  }
+}
