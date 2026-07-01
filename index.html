@@ -394,7 +394,12 @@
         : window.innerWidth > window.innerHeight
           ? "landscape"
           : "portrait";
-      $("screen-orient").textContent = ori.split("-")[0];
+        if (ori.includes("landscape")) {
+          ori = "Horizontal";
+        } else {
+          ori = "Vertical";
+        }
+      $("screen-orient").textContent = ori;
       var maxTouch = navigator.maxTouchPoints || 0;
       $("screen-touch").innerHTML =
         maxTouch > 0
