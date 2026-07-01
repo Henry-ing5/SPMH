@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Permissions-Policy" content="geolocation=(self), camera=(self), microphone=(self)">
   <title>Inspector de Hardware</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
   <style>
     * {
@@ -79,8 +80,9 @@
     }
 
     .card-value {
-      font-size: 20px;
+      font-size: 14px;
       font-weight: 500;
+      
     }
 
     .card-sub {
@@ -101,6 +103,7 @@
       height: 100%;
       border-radius: 3px;
       transition: width 0.5s;
+      width: 0%
     }
 
     .badge {
@@ -199,7 +202,7 @@
       <p class="card-value" id="bat-level">—</p>
       <p class="card-sub" id="bat-status">Consultando...</p>
       <div class="progress">
-        <div class="progress-fill" id="bat-bar" style="width: 0%"></div>
+        <div class="progress-fill" id="bat-bar"></div>
       </div>
     </div>
     <div class="card">
@@ -264,12 +267,12 @@
     </div>
     <div class="card">
       <p class="card-title">Plataforma</p>
-      <p class="card-value" id="sys-platform" style="font-size: 14px">—</p>
+      <p class="card-value" id="sys-platform">—</p>
       <p class="card-sub" id="sys-lang">—</p>
     </div>
     <div class="card">
       <p class="card-title">Zona horaria</p>
-      <p class="card-value" id="sys-tz" style="font-size: 14px">—</p>
+      <p class="card-value" id="sys-tz" >—</p>
       <p class="card-sub" id="sys-tz-offset">—</p>
     </div>
   </div>
@@ -281,17 +284,17 @@
   <div class="grid" data-cat="sensors">
     <div class="card">
       <p class="card-title">Acelerómetro</p>
-      <p class="card-value" id="acc-val" style="font-size: 14px">—</p>
+      <p class="card-value" id="acc-val" >—</p>
       <p class="card-sub" id="acc-sub">—</p>
     </div>
     <div class="card">
       <p class="card-title">Geolocalización</p>
-      <p class="card-value" id="geo-val" style="font-size: 13px">—</p>
+      <p class="card-value" id="geo-val">—</p>
       <p class="card-sub" id="geo-sub">—</p>
     </div>
     <div class="card">
       <p class="card-title">Dispositivos de media</p>
-      <p class="card-value" id="media-val" style="font-size: 14px">—</p>
+      <p class="card-value" id="media-val" >—</p>
       <p class="card-sub" id="media-sub">—</p>
     </div>
   </div>
